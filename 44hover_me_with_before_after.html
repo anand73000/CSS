@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		 
+		 div 
+		 {
+		 	height: 70px;
+		 	width: 150px;
+		 	background: lightblue;
+		 	text-align: center;
+		 	line-height: 70px;
+		 	margin: 100px auto;
+		 	border-radius: 30px;
+		 	position: relative;
+		 	z-index: 0;
+            overflow: hidden;
+		 }
+		 div:after
+		 {
+		 	content: "";
+		 	height: 70px;
+		 	width: 150px;
+		 	background: linear-gradient(red,blue);
+		 	position: absolute;
+		 	top: -100%;	
+		 	right: -100%;
+		 	transition: 1s;
+		 	z-index: -1;
+		 }
+		 div:before
+		 {
+		 	content: "";
+		 	height: 70px;
+		 	width: 150px;
+		 	background: linear-gradient(red,blue);
+		 	position: absolute;
+		 	bottom: -100%;	
+		 	left: -100%;
+		 	transition: 1s;
+		 	z-index: -1;
+		 }
+		 div:hover::after
+		 {
+		 	top: 0;
+		 	right:0 ;
+		 }
+		 div:hover::before
+		 {
+		 	bottom: 0;
+		 	left: 0;
+		 }
+		 
+
+	</style>
+</head>
+<body>
+
+	<div>
+		Hover me
+	</div>
+
+</body>
+</html>

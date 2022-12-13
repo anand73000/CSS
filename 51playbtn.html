@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		div
+		{
+			height: 100px;
+			width: 100px;
+			background: lightblue;
+			border-radius: 50%;
+			margin: 200px auto;
+			text-align: center;
+			line-height: 100px;
+			font-size: 25px;
+			position: relative;
+		}
+		.sp1,.sp2,.sp3
+		{
+			height: 100px;
+			width: 100px;
+			background:lightblue;
+			border-radius: 50%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			opacity: 1;
+		}
+		.sp1
+		{
+			animation: sp1 2s linear infinite;
+		}
+		.sp2
+		{
+			animation: sp2 2s linear infinite;
+		}
+		.sp3
+		{
+			animation: sp3 2s linear infinite;
+		}
+
+		@keyframes sp1
+		{
+			from{transform: scale(1.0);opacity: 1;}
+			to{transform: scale(1.2);opacity: 0.10;}
+		}
+		@keyframes sp2
+		{
+			from{transform: scale(1.0);opacity: 1;}
+			to{transform: scale(1.4);opacity: 0.10;}
+		}
+		@keyframes sp3
+		{
+			from{transform: scale(1.0);opacity: 1;}
+			to{transform: scale(1.6);opacity: 0.10;}
+		}
+	</style>
+</head>
+<body>
+ <div>
+ 	
+       <i class="fa-solid fa-play"></i>
+       <span class="sp1"></span>
+       <span class="sp2"></span>
+       <span class="sp3"></span>
+
+
+ </div>
+</body>
+</html>

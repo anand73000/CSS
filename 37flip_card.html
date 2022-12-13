@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.main
+		{
+			height: 300px;
+			width: 200px;
+			background: transparent;
+			margin: 100px auto;
+            position: relative;
+            box-shadow: 0 0 30px dimgray;
+			
+		}
+		.front,.back
+		{   
+			height: 300px;
+			width: 200px;   
+			position: absolute;
+			top: 0;
+			left: 0;  
+			backface-visibility: hidden; 
+			transform: rotateY(180deg);  
+			transition: 1s;  
+		}
+		.back
+		{
+          transform: rotateY(0deg);
+		}
+		
+		.main:hover .back
+		{
+			transform: rotateY(180deg);
+		}
+		.main:hover .front
+		{
+			transform: rotateY(0deg);
+		}
+	</style>
+</head>
+<body>
+
+	<div class="main">
+
+		 <div class="front">
+		 	 <img src="https://www.shutterstock.com/image-photo/man-hands-holding-global-network-260nw-1801568002.jpg" height="100%" width="100%">
+		 </div>
+
+		 <div class="back">
+		 	 <img src="https://www.shutterstock.com/image-photo/man-hands-holding-global-network-260nw-1801568002.jpg" height="100%" width="100%">
+		 </div>
+	</div>
+
+</body>
+</html>

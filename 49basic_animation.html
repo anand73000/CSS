@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		div 
+		{
+			height: 150px;
+			width: 150px;
+			background: black;
+/*			margin: 200px auto;*/
+			/*animation-name: basic;
+			animation-duration: 2s;
+			animation-iteration-count: 4;*/
+			animation: basic 2s 4;
+		}
+		@keyframes basic
+		{
+			/*from{background: black;}
+			to{background: red;}
+*/
+			0%{background: black;}
+			20%{background: red;border-radius: 50%;}
+			40%{background: green;transform: translateX(500px);}
+			60%{background: yellowgreen;}
+			80%{background: lightcoral;}
+			100%{background: white; box-shadow: 0 0 20px gray;transform: translateY(500px);height: 50px;width: 50px;}
+
+		}
+	</style>
+</head>
+<body>
+
+	<div>
+		
+	</div>
+
+</body>
+</html>
