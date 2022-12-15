@@ -13,14 +13,29 @@
 		}
 		.row .col
 		{
-			border: 4px solid blue;
-            height: 200px;
-            flex-flow: 1;
-		}
-		.c1
-		{
+			border: 2px solid blue;
+           flex-grow: 1;
 
 		}
+		.row .c1{background: lightblue;flex-basis: 280px;height: 300px;}
+		.row .c2{background: lightcoral;flex-basis: 280px;height: 300px;}
+		.row .c3{background: lightblue;flex-basis: 280px;height: 300px;}
+		.row .c4{background: lightcoral;flex-basis: 280px;height: 300px;}
+
+		.row .c2 img
+		{
+			object-fit: contain;
+		}
+
+		.row .c4
+		{
+			background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m7.jpg);
+/*			background-size: 100% 100%;*/
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		
 	</style>
 </head>
 <body>
@@ -31,7 +46,7 @@
 		</div>
 
 		<div class="col c2">
-			<img src="https://th.bing.com/th/id/OIP.ScYp15kHnxHhSEsItsUc4wHaIT?w=180&h=201&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+			<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m7.jpg" height="100%" width="100%">
 		</div>
 
 		<div class="col c3">col</div>
