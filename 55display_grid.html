@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.row
+		{
+			
+			background: lightblue;
+			display: grid;
+			grid-template-columns: 2fr 2fr 2fr;
+			grid-template-rows: 100px 50px auto;
+
+		}
+		.col 
+		{   
+			
+			border: 1px solid ;
+		}
+		.col .ncol
+		{
+			border: 1px solid;
+		}
+		.row .testcol
+		{
+			display: grid;
+			grid-template-columns: 2fr 2fr;
+			grid-template-rows: 50px auto;
+		}
+		.x 
+		{   
+			height: 100px;
+			border: 1px solid;
+			overflow: auto;
+
+		}
+		
+	</style>
+</head>
+<body>
+
+	<div class="row">
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col testcol">
+			<div class="ncol"></div>
+			<div class="ncol"></div>
+			<div class="ncol"></div>
+			<div class="ncol">
+				<div class="x">
+					lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+				<div class="x"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
